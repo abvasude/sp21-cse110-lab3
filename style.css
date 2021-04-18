@@ -3,30 +3,40 @@ body{
     background-color: beige;
     padding: 30px 50px 10px 100px;
 }
+/* sets all text with h1 with color, width, margin, border, height and text decor*/
 h1 {
     color: lightblue;
     width: 250px;
     margin: auto;
     border: 1px solid red;
     text-decoration: underline;
+    text-align: center;
+    height: 200px;
+    display:block;
 }
+/* sets all text with h2 with color, padding, text alignment, and height*/
 h2{
     color: rgba(241, 7, 7, 0.568);
     padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 30px;
+    text-align: center;
+    height: 50px;
 }
+/* sets all text with h3 with color, text alignment, and height*/
 h3{
     color: rgb(9, 230, 39);
     text-align: center;
+    height: 100px;
 }
+/* sets all text with bold this color*/
 b{
     color: hsl(30, 100%, 50%);
 }
+/* sets all text in paragraphs with this font*/
 p{
     font-family:'Roboto', sans-serif;
-    margin: 50px 40px 50px 40px;
 }
 /* Exact width */
 @media (width: 400px) {
@@ -54,9 +64,11 @@ html{
 }
 .ems li{
     font-size: 0.8em;
+    margin: 50px 40px 50px 40px;
 }
 .rems li{
     font-size: 1.2rem;
+    margin: 50px 40px 50px 40px;
 }
 .first{
     font-size: 1cm;
@@ -69,7 +81,7 @@ html{
     font-size: 0.5in;
 }
 .third{
-    font-size: 1vmin;
+    font-size: 25vmin;
 }
 .margin{
     margin-top: 40px;
@@ -77,4 +89,26 @@ html{
     margin-bottom: 20px;
     margin-left: 2em;
 }
-
+.line{
+    display: inline;
+}
+summary{
+    position: relative;
+}
+figcaption{
+    position: static;
+}
+/* When hovering over a button, turn light blue*/
+button:hover{
+    color:lightblue;
+}
+/* When pressing a button, turn red */
+button:active{
+    color: red;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items:center;
+}
