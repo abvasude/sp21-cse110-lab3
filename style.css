@@ -1,6 +1,6 @@
 body{
     background-color: beige;
-    padding: 30px 50px 10px 100px;
+    padding: 20px 20px 20px 20px;
 }
 /* sets all text with h1 with color, width, margin, border, height and text decor*/
 h1 {
@@ -10,7 +10,7 @@ h1 {
     border: 1px solid red;
     text-decoration: underline;
     text-align: center;
-    height: 200px;
+    height: 75px;
     display:block;
 }
 /* sets all text with h2 with color, padding, text alignment, and height*/
@@ -21,17 +21,18 @@ h2{
     padding-bottom: 50px;
     padding-left: 30px;
     text-align: center;
-    height: 50px;
+    height: 30px;
 }
 /* sets all text with h3 with color, text alignment, and height*/
 h3{
     color: rgb(9, 230, 39);
     text-align: center;
-    height: 100px;
+    height: 30px;
 }
 /* sets all text with bold this color*/
 b{
     color: hsl(30, 100%, 50%);
+    text-align: center;
 }
 /* sets all text in paragraphs with this font*/
 p{
@@ -61,6 +62,7 @@ p{
 html{
     font-size: 16px;
 }
+
 .ems li{
     font-size: 0.8em;
     margin: 50px 40px 50px 40px;
@@ -68,19 +70,34 @@ html{
 .rems li{
     font-size: 1.2rem;
     margin: 50px 40px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items:center;
+}
+.grid{
+    background-color: rgba(184, 250, 1, 0.8);
 }
 .first{
-    font-size: 1cm;
+    font-size: 2.54cm;
     border-width: 10px;
     border-style: solid;
     border-color: black;
     border-radius: 10px;
 }
 .second{
-    font-size: 0.5in;
+    font-size: 1in;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
 }
 .third{
-    font-size: 25vmin;
+    font-size: 10vmin;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
 }
 .margin{
     margin-top: 40px;
@@ -105,9 +122,9 @@ button:hover{
 button:active{
     color: red;
 }
-li{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items:center;
+.test{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-template-columns: auto;
 }

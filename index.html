@@ -6,7 +6,6 @@
         <link rel="icon"  
               type="image/png"
               href="screenshots/download.png">
-        /* creating an external CSS */
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href="style.css">
@@ -203,6 +202,7 @@
                     <option value="other">Other</option>
                 </select>
             <p>Choose which parts of the day you want to include:</p>
+            <div class="test">
                 <div class="first">
                     <input type="checkbox" id="morning" name="morning">
                     <label for="morning">Morning</label>
@@ -217,7 +217,7 @@
                     <input type="checkbox" id="evening" name="evening">
                     <label for="evening">Evening</label>
                 </div>
-
+            </div>
 
                 <label for="current">Current date:</label>
 
@@ -237,7 +237,8 @@
         
         <footer> If you have any questions, please reach out to Abhishek Vasudevan at
             <ul class="rems">
-                <li><a href="mailto:abvasude@ucsd.com">Email</a></li>
+                <li class="grid">His personal website</li>
+                <li class="grid"><a href="mailto:abvasude@ucsd.com">Email</a></li>
             </ul>
         </footer> 
     </body>
