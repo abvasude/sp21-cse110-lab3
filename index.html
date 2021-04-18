@@ -7,6 +7,8 @@
               type="image/png"
               href="screenshots/download.png">
         /* creating an external CSS */
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href="style.css">
     </head>
     <body>
@@ -35,7 +37,12 @@
                     <h3> Observation </h3>
                     <p>Soon after I was placed in an observation room for 15 minutes where I 
                     read about the possible side effects of the Pfeizer vaccine and how effective it
-                    is. During the 7 minute mark, <strong>one lady started screaming at the top of her lungs and everyone jumped from their seats</strong>.
+                    is. During the 7 minute mark, <strong>one lady started screaming </strong> at the 
+                        <div class="container">
+                            <div class="margin">top of her lungs and everyone jumped from their seats.</div> 
+                        </div>
+
+
                     I thought to myself, <i>Everything is fine. It was probably an allergic reaction to the vaccine. I probably do not have to worry.</i> As it turns out, the lady was just on the phone and started yelling at someone at the top of her lungs in a foreign language.
                     After that happened, I spent the last 5 minutes on my phone when I was texting my mom about when she should pick me up.
                     </p>
@@ -123,7 +130,7 @@
         I created a list in order of 
         priority. 
         <p>List of things for me to do in order for the weekend</p>
-        <ol>
+        <ol class="rems">
             <li> Revise my ECE 100 Lab Report</li>
             <li> Take my CSE 101 Quiz</li>
             <li> Take the CSE 110 Quiz</li>
@@ -192,17 +199,17 @@
                     <option value="other">Other</option>
                 </select>
             <p>Choose which parts of the day you want to include:</p>
-                <div>
+                <div class="first">
                     <input type="checkbox" id="morning" name="morning">
                     <label for="morning">Morning</label>
                 </div>
 
-                <div>
+                <div class="second">
                     <input type="checkbox" id="afternoon" name="afternoon">
                     <label for="afternoon">Afternoon</label>
                 </div>
 
-                <div>
+                <div class="third">
                     <input type="checkbox" id="evening" name="evening">
                     <label for="evening">Evening</label>
                 </div>
@@ -225,7 +232,7 @@
           </form>
         
         <footer> If you have any questions, please reach out to Abhishek Vasudevan at
-            <ul>
+            <ul class="rems">
                 <li><a href="mailto:abvasude@ucsd.com">Email</a></li>
             </ul>
         </footer> 

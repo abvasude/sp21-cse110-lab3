@@ -1,15 +1,80 @@
+
 body{
     background-color: beige;
+    padding: 30px 50px 10px 100px;
 }
 h1 {
     color: lightblue;
+    width: 250px;
+    margin: auto;
+    border: 1px solid red;
+    text-decoration: underline;
 }
 h2{
-    color: rgba(241, 7, 7, 0.568)
+    color: rgba(241, 7, 7, 0.568);
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
 }
 h3{
-    color: rgb(9, 230, 39)
+    color: rgb(9, 230, 39);
+    text-align: center;
 }
 b{
-    color: hsl(30, 100%, 50%)
+    color: hsl(30, 100%, 50%);
 }
+p{
+    font-family:'Roboto', sans-serif;
+    margin: 50px 40px 50px 40px;
+}
+/* Exact width */
+@media (width: 400px) {
+    div {
+      color: red;
+    }
+}
+  
+/* Minimum width */
+@media (min-width: 35rem) {
+    div {
+      background: rgb(6, 219, 77);
+    }
+}
+  
+/* Maximum width */
+@media (max-width: 50rem) {
+    div {
+      border: 2px solid blue;
+    }
+}
+
+html{
+    font-size: 16px;
+}
+.ems li{
+    font-size: 0.8em;
+}
+.rems li{
+    font-size: 1.2rem;
+}
+.first{
+    font-size: 1cm;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+.second{
+    font-size: 0.5in;
+}
+.third{
+    font-size: 1vmin;
+}
+.margin{
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 2em;
+}
+
