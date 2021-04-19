@@ -3,7 +3,7 @@ body{
     padding: 20px 20px 20px 20px;
 }
 /* sets all text with h1 with color, width, margin, border, height and text decor*/
-h1 {
+h1{
     color: lightblue;
     width: 250px;
     margin: auto;
@@ -29,15 +29,14 @@ h3{
     text-align: center;
     height: 30px;
 }
-/* sets all text with bold this color*/
-b{
-    color: hsl(30, 100%, 50%);
+
+/* sets all text with bold and paragraphs with this color and font*/
+i, p{
+    color: hsl(229, 100%, 50%);
     text-align: center;
-}
-/* sets all text in paragraphs with this font*/
-p{
     font-family:'Roboto', sans-serif;
 }
+
 /* Exact width */
 @media (width: 400px) {
     div {
@@ -107,9 +106,10 @@ html{
 }
 .line{
     display: inline;
-}
-summary{
     position: relative;
+}
+details summary{
+    color:maroon;
 }
 figcaption{
     position: static;
@@ -127,4 +127,23 @@ button:active{
     grid-row-start: 1;
     grid-row-end: 3;
     grid-template-columns: auto;
+}
+*#emphasize{
+    color:blueviolet;
+}
+/* link to my email should be red*/
+a[href="mailto:abvasude@ucsd.com"]{
+    color:crimson;
+}
+p > strong{
+    color:orangered;
+}
+summary ~ p{
+    color:palevioletred;
+}
+img + p{
+    color:black;
+}
+li.adjust{
+    color:darkgreen;
 }
